@@ -1,0 +1,27 @@
+<div class="thread">
+
+  <div class="thread-details">
+    <div class="flex-container row form-container">
+      <div class="from">Form:</div>
+      <div>{{thread.user.name}}</div>
+    </div>
+    <div class="content">{{thread.content}}</div>
+    <div class="date">{{thread.created | date:'medium'}}</div>
+  </div>
+
+  <div class="comments" >
+    <app-forum-comment [comment]="comment" *ngFor="let comment of thread.comments"></app-forum-comment>
+  </div>
+
+  <form class="flex-container row start center middle" [formGroup]="checkoutForm"
+        (ngSubmit)="addComment(checkoutForm.value)">
+
+    <textarea placeholder="Enter comment content..." id="address" type="text" rows="2"
+              formControlName="content"></textarea>
+
+    <button class="button" type="submit">Post</button>
+
+  </form>
+
+</div>
+

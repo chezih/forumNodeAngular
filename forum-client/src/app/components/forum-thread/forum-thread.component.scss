@@ -1,0 +1,40 @@
+.thread
+{
+  margin: 5px;
+  border: red 1px solid;
+  .button {
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  .thread-details {
+    width: 300px;
+    height: 130px;
+    border: blue 1px solid;
+    .form-container
+    {
+      margin: 10px;
+      .from {
+        margin-right: 5px;
+      }
+    }
+
+
+    .date
+    {
+      text-align: right;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    .content
+    {
+      margin: 30px;
+    }
+  }
+
+  .comments
+  {
+    margin-left: 300px;
+  }
+}

@@ -1,0 +1,26 @@
+.comment-container
+{
+  width: 300px;
+  height: 130px;
+  border: green 1px solid;
+  .form-container
+  {
+    margin: 10px;
+    .from {
+      margin-right: 5px;
+    }
+  }
+
+
+  .date
+  {
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .content
+  {
+    margin: 30px;
+  }
+}

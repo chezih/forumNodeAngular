@@ -1,0 +1,15 @@
+<div class="forum">
+  <app-forum-thread [thread]="thread" *ngFor="let thread of threads">
+
+  </app-forum-thread>
+  <form class="flex-container row start center middle add-thread" [formGroup]="checkoutForm"
+        (ngSubmit)="addThread(checkoutForm.value)">
+
+    <textarea placeholder="Enter thread content..." id="address" type="text" rows="5"
+              formControlName="content"></textarea>
+
+    <button class="button" type="submit">Post</button>
+
+  </form>
+</div>
+
